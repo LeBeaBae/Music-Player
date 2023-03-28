@@ -1,0 +1,62 @@
+{
+  "version": "4.30.2",
+  "short_name": "AudPlay",
+  "name": "Music Player | Made by Thorley Öner",
+  "icons": [
+    {
+      "src": "./Favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "scope": "./",
+  "shortcuts": [
+    {
+      "name": "Music Player",
+      "short_name": "Main",
+      "description": "The main page of my Music Player.",
+      "url": "/?source=pwa",
+      "icons": [{ "src": "./Favicon.png", "sizes": "512x512" }]
+    }
+  ],
+  "description": "An Mp3 Player made by Thorley Öner",
+  "screenshots": [
+    {
+      "src": "./Example Screenshot 1.png",
+      "type": "image/png",
+      "sizes": "1366x768"
+    },
+    {
+      "src": "./Example Screenshot 2.png",
+      "type": "image/png",
+      "sizes": "1366x768"
+    },
+    {
+      "src": "./Example Screenshot 3.png",
+      "type": "image/png",
+      "sizes": "1366x768"
+    },
+    {
+      "src": "./Example Screenshot 4.png",
+      "type": "image/png",
+      "sizes": "278x285"
+    },
+    {
+      "src": "./Example Screenshot 5.png",
+      "type": "image/png",
+      "sizes": "298x285"
+    },
+    {
+      "src": "./Example Screenshot 6.png",
+      "type": "image/png",
+      "sizes": "1363x240"
+    },
+    {
+      "src": "./Example Screenshot 7.png",
+      "type": "image/png",
+      "sizes": "320x138"
+    }
+  ]
+}

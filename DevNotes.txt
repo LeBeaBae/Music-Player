@@ -1,0 +1,10 @@
+Developer Notes
+
+
+BUGS/TO BE FIXED:
+  Javascript:
+    1. Function loadRandomSong(); not working: deal with it.
+    2. loop and shuffle features are bitches, not working: again, imma deal with it LATER
+  
+  Other shit:
+    you can still access the dividers... TwT

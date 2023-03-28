@@ -1,0 +1,113 @@
+/*Song adder*/
+  body {
+    background: rgb(0, 0, 0, 0.4);
+    color: black;
+    overflow: hidden;
+  }
+  
+  .songForm {
+    position: fixed;
+    top: 45px;
+    z-index: 10000;
+    width: 320px;
+  	height: 500px;
+    background: rgb(0, 0, 0, 0.93);
+    border-radius: 10px;
+    color: white;
+    padding-top: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  #closeAdder {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  
+  p {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  small {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-left: 10px;
+  }
+  
+  input {
+    display: inline-block;
+    height: 22px;
+    margin-left: 10px;
+  }
+  
+  button {
+    display: inline-block;
+    height: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  small {
+    display: none;
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 320px;
+    height: 535px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 10px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 320px;
+    height: 535px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .previewActive .flip-card .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 320px;
+    height: 535px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  

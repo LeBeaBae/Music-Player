@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Metadata... I don't think I need this many teeheehee-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An MP3 Music Player.">
+    <meta name="keywords" content="music, player, mp3, html">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="fb:admins" content="thorley.oner">
+    <meta property="og:title" content="Music Player">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://AwesomeMusicPlayer.com/">
+    <meta property="og:image" content="./Favicon.jpg">
+    <meta property="og:description" content="An MP3 Music Player.">
+    <meta charset="UTF-8">
+
+    <title>Song Adder</title>
+    <base href="./">
+    <!--This is not actually a real metadata lol-->
+    <link rel="shortcut icon" type="image/jpg" href="Favicon.jpg" />
+    <link rel="stylesheet" type="text/css" href="Song Adder.css">
+
+    <!--Excessive Font Awesome links ;)-->
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/duotone.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/light.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css">
+</head>
+<body class="dark-mode"  onload="setTimeOnLoad()">
+<!--Song Adder-->
+<div class="addSong">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h2>Add a song</h2>
+        <i id="closeAdder" onclick="closeAdder()" class="fas fa-times" accesskey="x"></i>
+        <br>
+<form action="mailto:tloner@madison.k12.wi.us?subject=Song%20request%20for%20audio%20player" name="songForm" class="songForm" method="post" enctype="text/plain" onsubmit="addKeyUp(); return validateForm()">
+  
+  <!--song name-->
+  <div class="field">
+    <label for="songName"> Song Name:</label>
+    <input type="text" autofocus="true" autocomplete="true" placeholder="Song Name (E.G: Dawn)" name="Song name ">
+    <small>Please enter the song's name</small><br><br>
+  </div>
+  
+  <!--song artist-->
+  <div class="field">
+    <label for="songArtist"> Song Artist:</label>
+    <input type="text" autofocus="true" autocomplete="true" placeholder="Song Artist (E.G: Skylike)" name="Song artist ">
+    <small>Please enter the song's artist</small><br><br>
+  </div>
+  
+  <!--song link-->
+  <div class="field">
+    <label for="songLink"> Youtube song link:</label>
+    <input type="url" autofocus="true" autocomplete="true" placeholder="https://www.youtube.com/watch?v" name="Song link ">
+    <small>Please enter a youtube link to the song</small><br><br>
+  </div>
+  
+  <div class="field">
+    <p>BEFORE YOU SUBMIT: Please make sure you have entered a valid URL, and that it's not a rick roll.</p><br>
+    <button type="submit">Submit your Song Request!</button>
+  </div>
+</form>
+      </div>
+      <div class="flip-card-back">
+      </div>
+    </div>
+  </div>
+</div>
+    
+  <script type="text/javascript" src="JavaScript/songList.json"></script>
+  <script type="text/javascript" src="JavaScript/Song Adder.js"></script>
+ 
+</body>
+
+</html>
