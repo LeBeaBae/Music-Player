@@ -143,7 +143,7 @@ var timePaused;
 window.addEventListener('keydown', checkKeyPressed, false);
 window.addEventListener('mouseup', mouseButton);
 
-var titleMain = `Muzak for gays`;
+var titleMain = `Muzak Player`;
 main.nav.title.innerHTML = titleMain;
 var titleTimeShown = (localStorage.getItem('titleTimeShown') === 'true') ? true : false;
 
@@ -789,6 +789,7 @@ for(let i = 0; i < songListItems.length; i++){
 		toggleSongList.click();
 		changeTitle();
 	  console.log('Song chosen - ' + songList[currentSongIndex].songname);
+	  main.audio.play();
 	});
 }
 
