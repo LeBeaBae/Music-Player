@@ -1,0 +1,238 @@
+/*
+to add songs, download an mp3 into the music file, a thumbnail into the thumbnails file, and go into the javascript file on a code editor and add an object to the songList array.
+syntax for adding:
+    {
+      "thumbnail": "PHOTONAME.EXTENSION",
+      "audio": "MP3NAME.mp3",
+      "songname":"SONG NAME",
+      "artistname":"ARTIST'S NAME",
+    },
+
+    (copy):
+    {
+  	  "thumbnail": "",
+  	  "audio": "",
+  	  "songname": "",
+  	  "artistname": ""
+  	},
+replace PHOTONAME with the name of the thumbnail in the folder, EXTENSION with the thumbnails extension, SONG NAME with the song's name, and ARTIST'S NAME with the name of the curator.
+*/
+
+const songListLocal = [
+  {
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "The Album",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V1.mp3",
+	  "songname": "The Album - V1",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V2.mp3",
+	  "songname": "The Album - V2",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V3.mp3",
+	  "songname": "The Album - V3",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V4.mp3",
+	  "songname": "The Album - V4",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V5.mp3",
+	  "songname": "The Album - V5",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V6.mp3",
+	  "songname": "The Album - V6",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V7.mp3",
+	  "songname": "The Album - V7",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "The Album Cover.png",
+	  "audio": "The Album - V8.mp3",
+	  "songname": "The Album - V8",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "Originals",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "Brazil Cover.png",
+	  "audio": "Brazil.mp3",
+	  "songname": "Brazil",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "Alive Cover.png",
+	  "audio": "Alive.mp3",
+	  "songname": "Alive",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "Jeevan Cover.png",
+	  "audio": "Jeevan.mp3",
+	  "songname": "Jeevan",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "Jeevan + Dystopia Cover.png",
+	  "audio": "Jeevan + Dystopia.mp3",
+	  "songname": "Jeevan + Dystopia",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "Dystopia Cover.png",
+	  "audio": "Dystopia.mp3",
+	  "songname": "Dystopia",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "Bite-Sized Beats Cover.png",
+	  "audio": "Bite-Sized Beats.mp3",
+	  "songname": "Bite-Sized Beats",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "Evadare",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "Evadare Cover.png",
+	  "audio": "Evadare.mp3",
+	  "songname": "Evadare",
+	  "artistname": "Thorley-Arya Öner"
+  },
+  {
+	  "thumbnail": "EvadeRun Cover.png",
+	  "audio": "EvadeRun.mp3",
+	  "songname": "EvadeRun",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Xrun Cover.png",
+	  "audio": "Xrun.mp3",
+	  "songname": "Xrun",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Galaxy Cover.png",
+	  "audio": "Galaxy.mp3",
+	  "songname": "Galaxy",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Xrun Cover.png",
+	  "audio": "Off Modern.mp3",
+	  "songname": "Off Modern",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "Arbox",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "Airline Cover.png",
+	  "audio": "Airline.mp3",
+	  "songname": "Airline",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Augury Cover.png",
+	  "audio": "Augury.mp3",
+	  "songname": "Augury",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Armed Cover.png",
+	  "audio": "Armed.mp3",
+	  "songname": "Armed",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "Coldbox",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "Mechanic Cover.png",
+	  "audio": "Mechanic Beta.mp3",
+	  "songname": "Mechanic Beta",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Mechanic Cover.png",
+	  "audio": "Mechanic.mp3",
+	  "songname": "Mechanic",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Bonfire Cover.png",
+	  "audio": "Bonfire.mp3",
+	  "songname": "Bonfire",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "space.png",
+	  "audio": null,
+	  "songname": "Miscellaneous",
+	  "artistname": ""
+	},
+	{
+	  "thumbnail": "Travis Cover.png",
+	  "audio": "Travis.mp3",
+	  "songname": "Travis",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Two Faces Cover.png",
+	  "audio": "Two Faces.mp3",
+	  "songname": "Two Faces",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "The Bells Cover.png",
+	  "audio": "The Bells.mp3",
+	  "songname": "The Bells",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "The Citadel Cover.png",
+	  "audio": "The Citadel.mp3",
+	  "songname": "The Citadel",
+	  "artistname": "Thorley-Arya Öner"
+	},
+	{
+	  "thumbnail": "Kochari Cover.png",
+	  "audio": "Kochari.mp3",
+	  "songname": "Kochari",
+	  "artistname": "Thorley-Arya Öner"
+	},
+]
